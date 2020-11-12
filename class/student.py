@@ -12,6 +12,13 @@ class Student:
         A new student type object will be returned.
         '''
     def __init__(self, name, number):
+        '''This is the object constructor. This method is
+           called automatically when the object is created.
+           The name attribute of the object is set to the first argument
+           and the number attribute is set to the 2nd argument when
+           the student class is called.
+           The courses attribute of the object is set to an empty
+           dictionary.'''
         self.name = name
         self.number = number
         self.courses = {}
@@ -39,7 +46,7 @@ class Student:
 
     # Calculate the grade point average of all courses and return it
     def displayGPA(self):
-        '''Thie object method computer the grade point average for
+        '''Thie object method computer the grade point average
            for the course/grade stored in the course dictionary
            and return the gpa as a floating point object.'''
         gpa = 0.0
